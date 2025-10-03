@@ -1,0 +1,82 @@
+/* Contenedor principal */
+.card {
+  max-width: 1100px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Grid de features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Tarjetas */
+.feature-card {
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* Imágenes dentro de cada card */
+.feature-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+/* Títulos de las features */
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+/* Texto de cada feature */
+.feature-card p {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Colores diferenciados para cada feature */
+.feature-capturar {
+  border-top: 4px solid #14b8a6; /* teal */
+}
+.feature-entrenar {
+  border-top: 4px solid #3b82f6; /* azul */
+}
+.feature-practicar {
+  border-top: 4px solid #f59e0b; /* amarillo */
+}
+.feature-dataset {
+  border-top: 4px solid #ef4444; /* rojo */
+}

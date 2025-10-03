@@ -1,0 +1,102 @@
+/* Contenedor principal */
+.practicar-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  background: #f5f6fa;
+  font-family: "Segoe UI", sans-serif;
+  color: #2c3e50;
+}
+
+/* Card central */
+.practicar-card {
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Título */
+.practicar-card h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #003154;
+}
+
+/* Input + botón en fila */
+.practice-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.practice-form input {
+  flex: 1;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.practice-form input:focus {
+  border-color: #3F6F99;
+  box-shadow: 0 0 0 3px rgba(63,111,153,0.2);
+}
+
+.practice-form button {
+  background: #27ae60;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.practice-form button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Feed de cámara */
+.practice-feed {
+  margin-top: 1.5rem;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.practice-feed img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .practice-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .practice-form button {
+    width: 100%;
+  }
+}

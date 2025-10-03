@@ -1,0 +1,104 @@
+/* Contenedor general */
+.capturar-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.capturar-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Grid de dos columnas */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* config más pequeña, cámara más grande */
+  gap: 50px;
+}
+
+/* Estilo general para cada card */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Configuración */
+.config-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+.dropdown, 
+.config-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Botones */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-action {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-action:hover {
+  transform: scale(1.05);
+}
+
+.start { background: #27ae60; }
+.stop { background: #e74c3c; }
+.save { background: #8e44ad; }
+
+/* Cámara */
+.camera-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #34495e;
+}
+
+.camera-feed {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 500px;
+}
+
+.camera-feed img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
