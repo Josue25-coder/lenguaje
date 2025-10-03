@@ -447,6 +447,10 @@ def _cleanup():
     except Exception:
         pass
 
+@app.route("/")
+def home():
+    return "Hola Render! El backend está corriendo."
+
 # ------------------------
 if __name__ == "__main__":
     print("Backend iniciado en http://0.0.0.0:5000")
